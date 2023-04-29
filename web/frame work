@@ -1,0 +1,30 @@
+create table student(rollno int(3) primary key,sname varchar(15),gender char(1),marks int(3)); 
+insert into student values(1,'ANI','M',67); insert into student values(2,'BINDU','F',87); insert into student values(3,'DHANU','M',98); 
+jdbc:mysql://localhost:3306/jdbc99
+
+the process of binding the data menmebr and member function together in class in konwn as encapulation
+setter- modify 
+getter- read data return type based on value
+advatage hiding data
+by using encapulation we can achive data 
+data hiding
+one class to another class- inhertancae
+one parent having more than class
+interface-it also same like class
+it is mediam betn service provider and user
+
+
+sql
+create table order1(oid number(3) primary key,oname varchar2(15),odate date); create table customer(cid number(3) primary key,cname varchar2(15), phn number(10) check(length(phn)=10),oid number(3),foreign key(oid) references order1(oid)); 
+
+create table customer(cid number(3) primary key,cname varchar2(15), phn number(10) check(length(phn)=10),oid number(3),foreign key(oid) references order1(oid)); 
+
+flashback table customer1 to before drop; 
+
+step 1:- create table e1 as select * from emp; 
+step 2:- select * from e1; 
+step 3:- truncate table e1; 
+step 4:- select * from tab; 
+step 5:- desc e1 step 6:- select * from e1;
+alter table cust rename to customer1;
+alter table e2 add email varchar2(15);  

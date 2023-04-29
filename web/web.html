@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+</head>
+<style>
+  * {
+  padding: 0px;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+.countainer {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #333;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-around;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.pages {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 5px;
+  font-size: 22px;
+}
+
+.link {
+  color: whitesmoke;
+  margin: 0%;
+
+  padding: 0 .3rem;
+}
+
+.page:hover {
+  border-bottom: #f5f5f5 solid 1px;
+  padding-bottom: 10px;
+}
+
+.active {
+  border-bottom: orange solid 1px;
+  padding-bottom: 10px;
+}
+
+
+
+
+
+  .link {
+    padding: 0px 1rem;
+  }
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;   
+  background:
+  url('back.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.container {
+    height: 500px;
+    width: 500px;
+    position: absolute;
+    top: 10%;
+    left: 30px;
+}
+
+.container h1 {
+    font-size: 3rem;
+    color: #0c6f96;
+    margin: 0 0 10px 0;
+}
+
+.container .form-group {
+    margin: 30px 0 30px 0;
+}
+
+.container .form-group label {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+.container .form-group input {
+    margin: 5px 0;
+    padding-left: 5px;
+    height: 40px;
+    width: 80%;
+    border: 0;
+    outline: none;
+    background: transparent;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+    transition: 0.5s ease;
+}
+
+.container .form-group input:focus {
+    border-bottom: 2px solid #0c6f96;
+}
+
+::placeholder {
+    color: #ccc;
+}
+
+.container a {
+    color: #0c6f96;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.container button {
+    margin: 20px 0;
+    padding: 10px 40px;
+    display: inline-block;
+    border: 0;
+    outline: none;
+    background: linear-gradient(to left, #0c6f96, #fff);
+    font-size: 18px;
+    color: #111;
+    font-weight: 400;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.container button:hover {
+    background: linear-gradient(to right, #0c6f96, #fff);
+}
+
+@media (max-width:600px) {
+    .container {
+        left: 0px;
+        padding: 50px;
+    }
+}
+
+
+</style>
+<body>
+
+  <body>
+    <nav>
+      <div class="countainer">
+        <ul class="pages">
+          <a href="#" class="link link1">
+            <li class="page1">Home</li>
+          </a>
+          <a href="#" class="link link2">
+            <li class="page2">About</li>
+          </a>
+          <a href="#" class="link link3">
+            <li class="page3">Serveices</li>
+          </a>
+          <a href="#" class="link link4">
+            <li class="page4">Contact</li>
+          </a>
+        </ul>
+        
+        <p class="web">My Website</p>
+      </div>
+    </nav>
+    
+   <div class="container">
+        <h1>Login Page</h1>
+        <div class="form-group">
+            <label>Email</label> <br>
+            <input type="email" name="email" placeholder="Enter Email....">
+        </div>
+        <div class="form-group">
+            <label>Password</label> <br>
+            <input type="password" name="password" placeholder="Enter Password...">
+        </div>
+        <a href="#">Forgot Password</a> <br>
+        <button type="submit">Log In</button>
+    </div>
+</body>
+</html>
+  
+  
